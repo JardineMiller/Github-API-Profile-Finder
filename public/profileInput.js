@@ -1,6 +1,8 @@
 const ProfileInput = function(searchInput, profileList) {
   this.searchInput = searchInput;
   this.profileList = profileList;
+  this.onChange = null;
+
 
   this.searchInput.addEventListener('keyup', function() {
     value = this.searchInput.value;
