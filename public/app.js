@@ -10,7 +10,7 @@ const app = function() {
   let repoView = new RepoView(repoDiv);
 
   profileList.onUpdate = function(profile) {
-    console.log(profile);
+    // console.log(profile);
     profileView.display(profile);
   }
 

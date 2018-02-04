@@ -14,6 +14,7 @@ ProfileView.prototype.display = function(profile) {
       <div class='col-sm-3'>
         <a href='${profile.html_url}' target='_blank'>
         <img src='${profile.avatar_url}' class='img-thumbnail' alt='Profile Avatar'/>
+        <a target='_blank' href='${profile.html_url}' class='btn btn-primary btn-block'>View Profile</a>
         </a>
       </div>
       <div class='col-sm-9'>

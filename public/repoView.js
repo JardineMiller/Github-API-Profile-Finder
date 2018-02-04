@@ -3,15 +3,22 @@ const RepoView = function(container) {
 }
 
 RepoView.prototype.display = function(repoList) {
-  this.container.innerHTML = `
-  <h3>Repositories</h3>
-  <div class="card">
-    <div class="card-header">
-      
-    </div>
-    <div class="card-body">
+  this.container.innerHTML = '<h3>Repositories</h3><div class="row"></div>';
+  repoList.forEach(function(repo) {
+    this.addRepo(repo);
+  }.bind(this))
+};
 
-    </div>
-  </div>
-  `
+RepoView.prototype.addRepo = function(repo) {
+  this.container.childNodes[1].innerHTML += `
+    <div class='col-sm-6'>
+      <div class="card repo">
+        <div class="card-header">
+          ${repo.name}
+        </div>
+        <div class="card-body">
+
+        </div>
+      </div>
+  ` 
 };
