@@ -1,3 +1,14 @@
 main {
   margin-top: 50px;
 }
+
+.input-error:focus {
+  border-color: #FF0039;
+  box-shadow: 0 0 0 0.2rem rgba(255,0,57,.25);
+}
+
+
+.input-success:focus {
+  border-color: #3FB618;
+  box-shadow: 0 0 0 0.2rem rgba(63,182,24, .25);
+}
