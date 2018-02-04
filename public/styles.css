@@ -12,3 +12,11 @@ main {
   border-color: #3FB618;
   box-shadow: 0 0 0 0.2rem rgba(63,182,24, .25);
 }
+
+.profile-details {
+  padding: 10px 0;
+}
+
+.card {
+  margin-bottom: 10px;
+}
