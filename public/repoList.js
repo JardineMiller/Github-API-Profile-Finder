@@ -12,7 +12,7 @@ RepoList.prototype.getData = function() {
 
   request.addEventListener('load', function() {
     if(request.status != 200) {
-      document.querySelector('#profile-repos').innerHTML = '<h3>Repositories</h3><div class="row"></div>';
+      document.querySelector('#profile-repos').innerHTML = '<div class="row"></div>';
       return; 
     }
     const jsonString = request.responseText;

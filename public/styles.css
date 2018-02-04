@@ -24,3 +24,7 @@ main {
 .repo {
   margin: 0 0 30px;
 }
+
+.card-header h5 {
+  margin: 0;
+}
