@@ -16,13 +16,14 @@
   <script type="text/javascript" src="profileInput.js"></script>
   <script type="text/javascript" src="profileView.js"></script>
   <script type="text/javascript" src="repoView.js"></script>
+  <script type="text/javascript" src="api_key.js"></script>
 
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Git GitHub Profiles</a>
+    <a class="navbar-brand" href="/">Git GitHub Profiles</a>
   </nav>
 
   <main role="main" class="container">
@@ -30,13 +31,12 @@
     <div class="search-container">
       <h1>Search GitHub Users</h1>
       <p class="lead">Enter a username to fetch a user's profile and repos.</p>
-      <input type="text" id="search-user" class="form-control" placeholder="GitHub username" name="">
+      <input type="text" id="search-user" class="form-control" placeholder="GitHub username">
     </div>
     <br>
     <div id="profile"></div>
     <br>
-    <div id="profile-repos">
-    </div>
+    <div id="profile-repos"></div>
 
   </main><!-- /.container -->
   

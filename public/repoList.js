@@ -1,7 +1,8 @@
 const RepoList = function(url) {
+  this.key = new ApiKey();
   this.url = url;
-  this.client_id = '6a9102849cdf9bb1a979';
-  this.client_secret = '977def10a5abe11efc07899a061f80181a800e0a';
+  this.client_id = this.key.client_id;
+  this.client_secret = this.key.client_secret;
   this.repos = null;
   this.onUpdate = null;
 }

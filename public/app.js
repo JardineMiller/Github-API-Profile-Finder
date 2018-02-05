@@ -15,7 +15,7 @@ const app = function() {
   }
 
   repoList.onUpdate = function(repos) {
-    console.log(repos);
+    // console.log(repos);
     repoView.display(repos);
   }
 
